@@ -1,9 +1,13 @@
+import java.util.Arrays;
+
 import client.login.LoginComponent;
+import client.vistaPrincipal.VistaPrincipalComponent;
+import java.awt.GraphicsEnvironment;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
-        //VistaPrincipalTemplate visPrincipal = new VistaPrincipalTemplate();
-        LoginComponent logComponent = new LoginComponent();
+        VistaPrincipalComponent visPrincipal = new VistaPrincipalComponent();
+        //LoginComponent logComponent = new LoginComponent();
     }
 }

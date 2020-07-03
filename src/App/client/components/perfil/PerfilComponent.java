@@ -5,10 +5,8 @@ import client.vistaPrincipal.VistaPrincipalComponent;
 public class PerfilComponent {
     
     private PerfilTemplate perfilTemplate;
-    private VistaPrincipalComponent vistaPrincipalComponent;
 
-    public PerfilComponent(VistaPrincipalComponent vistaPrincipalComponent){
-        this.vistaPrincipalComponent = vistaPrincipalComponent;
+    public PerfilComponent(){
         perfilTemplate = new PerfilTemplate(this);
     }
 

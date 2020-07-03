@@ -7,7 +7,8 @@ import java.awt.Cursor;
 public class RecursosService {
 
     private static RecursosService servicio;
-    private Color colorFndoIzq, colorFndoCampos, colorFont, colorFontOp, colorBtnIngresar, colorAzulFondo, colorAzulFondoLateral;
+    private Color colorFndoIzq, colorFndoCampos, colorFont, colorFontOp, colorBtnIngresar, colorAzulFondo, 
+        colorAzulFondoLateral, colorFndoJuega, colorHerramientas;
     private Font fontPrincipal, fontSecundaria, fontPer;
     private Cursor cMano;
     
@@ -19,6 +20,8 @@ public class RecursosService {
         colorBtnIngresar = new Color(209, 54, 57);
         colorAzulFondo = new Color(2, 4, 7);
         colorAzulFondoLateral = new Color(1, 10, 19);
+        colorFndoJuega = new Color(30, 35, 40);
+        colorHerramientas = new Color(205, 190, 145);
         fontPrincipal = new Font("Typold Condensed Medium", Font.BOLD, 22);
         fontSecundaria = new Font("Typold Condensed Medium", Font.BOLD, 11);
         fontPer = new Font("Typold Condensed Medium", Font.BOLD, 13);
@@ -73,5 +76,13 @@ public class RecursosService {
 
     public Color getColorBtnIngresar(){
         return colorBtnIngresar;
+    }
+
+    public Color getColorFndoJuega() {
+        return colorFndoJuega;
+    }
+
+    public Color getColorHerramietas() {
+        return colorHerramientas;
     }
 }

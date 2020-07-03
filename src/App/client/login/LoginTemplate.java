@@ -60,10 +60,10 @@ public class LoginTemplate extends JFrame {
     }
 
     public void crearObjetosDecoradores(){
-        iIcon = new ImageIcon("resources/img/iLogin.jpg");
-        iFondo = new ImageIcon("resources/img/fondoLogin.jpg");
-        iAyuda = new ImageIcon("resources/img/ayuda.png");
-        iEntrar = new ImageIcon("resources/img/loginEntrar.png");
+        iIcon = new ImageIcon("resources/img/login/iLogin.jpg");
+        iFondo = new ImageIcon("resources/img/login/fondoLogin.jpg");
+        iAyuda = new ImageIcon("resources/img/login/ayuda.png");
+        iEntrar = new ImageIcon("resources/img/login/loginEntrar.png");
         borderCampos = BorderFactory.createLineBorder(sRecursos.getColorFndoCampos(), 3, true);
     }
 
@@ -97,7 +97,7 @@ public class LoginTemplate extends JFrame {
         bAyuda.addActionListener(loginComponent);
         pIzquierda.add(bAyuda);
         //Boton Entrar
-        iAux = new ImageIcon(iEntrar.getImage().getScaledInstance(64, 64, Image.SCALE_AREA_AVERAGING));
+        iAux = new ImageIcon(iEntrar.getImage().getScaledInstance(31, 30, Image.SCALE_AREA_AVERAGING));
         bEntrar = sObjGraficos.crearJButton(null, (pIzquierda.getWidth() - 64) / 2, 486, 64, 64, null, iAux, null,
             sRecursos.getColorBtnIngresar(), null, null, "o", true, false);
         bEntrar.addActionListener(loginComponent);

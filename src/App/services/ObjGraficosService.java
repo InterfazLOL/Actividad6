@@ -44,18 +44,18 @@ public class ObjGraficosService {
         bBoton.setCursor(cursor);
         bBoton.setIcon(imagen);
         bBoton.setFont(fuente);
+        bBoton.setBorder(border);
         bBoton.setBackground(colorFondo);
         bBoton.setForeground(colorFuente);
-        bBoton.setBorder(border);
         switch (alineacion) {
             case "l":
-                bBoton.setHorizontalAlignment(SwingConstants.LEFT);
-                break;
+            bBoton.setHorizontalAlignment(SwingConstants.LEFT);
+            break;
             case "r":
-                bBoton.setHorizontalAlignment(SwingConstants.RIGHT);
-                break;
+            bBoton.setHorizontalAlignment(SwingConstants.RIGHT);
+            break;
             default:
-                break;
+            break;
         }
         return bBoton;
     }

@@ -1,39 +1,39 @@
-package client.components.clash;
-
-import java.awt.Color;
+package client.components.juega;
 
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import services.ObjGraficosService;
 import services.RecursosService;
 
-public class ClashTemplate extends JPanel {
+public class JuegaTemplate extends JPanel {
     
-    private ClashComponent clashComponent;
+    private JuegaComponent juegaComponent;
 
     // Declaracion de servicios
     private ObjGraficosService sObjGraficos;
     private RecursosService sRecursos;
 
     private JLabel lFondo;
-    private ImageIcon iFondoClash;
+    private ImageIcon iFondoJuega;
 
-    public ClashTemplate(ClashComponent clashComponent){
-        
-        this.clashComponent = clashComponent;
+    public JuegaTemplate(JuegaComponent juegaComponent){
+        this.juegaComponent = juegaComponent;
+
         sObjGraficos = ObjGraficosService.getService();
         sRecursos = RecursosService.getService();
 
-        iFondoClash = new ImageIcon("resources/img/clash/fondoClash.jpg");
+        iFondoJuega = new ImageIcon("resources/img/juega/fondoJuega.jpg");
         lFondo = new JLabel();
         lFondo.setBounds(0, 0, 1055, 638);
-        lFondo.setIcon(iFondoClash);
+        lFondo.setIcon(iFondoJuega);
         this.add(lFondo);
 
-        this.setBounds(0, 0, 1055, 638);
+        this.setSize(1055, 638);
         this.setLayout(null);
-        this.setBackground(Color.GRAY);
+        this.setBackground(null);
+        this.setVisible(true);
     }
 }
